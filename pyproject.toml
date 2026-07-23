@@ -1,13 +1,14 @@
 [tool.poetry]
 name = "torchsystem"
-version = "1.4.7"
+version = "1.4.8"
 description = "A framework for creating message-driven machine learning systems with PyTorch"
-authors = ["Eric Hermosis <eric.hermosis@gmail.com>"]
+authors = ["Eric M. Cardozo (Eric Hermosis) <eric.m.cardozo@gmail.com>"] 
 license = "Apache-2.0"
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+torch = "^2.13.0"
 
 
 [tool.poetry.group.tests.dependencies]

@@ -1,4 +1,4 @@
-# Copyright 2024 Eric Hermosis
+# Copyright 2024 Eric M. Cardozo (Eric Hermosis)
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -9,7 +9,7 @@
 # This software is distributed "AS IS," without warranties or conditions.
 # See the License for specific terms.
 #
-# For inquiries, visit: entropy-flux.github.io/TorchSystem/
+# For inquiries, visit: eric-m-cardozo.github.io/TorchSystem/
 
 
 from re import sub

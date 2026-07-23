@@ -1,6 +1,6 @@
 # TorchSystem.
 
-This framework will help you to create powerful and scalable systems using the PyTorch library. It is designed under the principles of domain driven design (DDD) and includes built-in message patterns and a robust dependency injection system. It enables the creation of stateless, modular service layers and robust domain models. This design facilitates better separation of concerns, testability, and scalability, making it ideal for complex IA training systems. You can find the full documentation here: [entropy-flux.github.io/TorchSystem/](https://entropy-flux.github.io/TorchSystem/)
+This framework will help you to create powerful and scalable systems using the PyTorch library. It is designed under the principles of domain driven design (DDD) and includes built-in message patterns and a robust dependency injection system. It enables the creation of stateless, modular service layers and robust domain models. This design facilitates better separation of concerns, testability, and scalability, making it ideal for complex IA training systems. You can find the full documentation here: [eric-m-cardozo.github.io/TorchSystem/](https://eric-m-cardozo.github.io/TorchSystem/)
 
 ## Disclaimer:
 
@@ -407,27 +407,27 @@ Each time you run this script:
 
 - After evaluation, the consumer will automatically store checkpoints.
 
-The hash of the model ensures that different configurations (e.g., changing hidden layer size) generate separate checkpoints, preventing overwriting previous models. You can find the full example [here](https://github.com/entropy-flux/TorchSystem/tree/main/examples/mnist-mlp). Make sure you have torch, torchvision, and torchsystem installed to run it. Simply execute python main.py, and it will download the dataset and start training.
+The hash of the model ensures that different configurations (e.g., changing hidden layer size) generate separate checkpoints, preventing overwriting previous models. You can find the full example [here](https://github.com/eric-m-cardozo/TorchSystem/tree/main/examples/mnist-mlp). Make sure you have torch, torchvision, and torchsystem installed to run it. Simply execute python main.py, and it will download the dataset and start training.
 
 ## Features
 
 Here is a more detailed list of features with links to their documentation.
 
-- [**Aggregates**](https://entropy-flux.github.io/TorchSystem/domain/): Define the structure of your domain by grouping related entities and enforcing consistency within their boundaries. They encapsulate both data and behavior, ensuring that all modifications occur through controlled operations.
+- [**Aggregates**](https://eric-m-cardozo.github.io/TorchSystem/domain/): Define the structure of your domain by grouping related entities and enforcing consistency within their boundaries. They encapsulate both data and behavior, ensuring that all modifications occur through controlled operations.
 
-- [**Domain Events**](https://entropy-flux.github.io/TorchSystem/domain/): Aggregates can produce and consume domain events, which signal meaningful changes in the system or trigger actions elsewhere. Exceptions are supported to be treated as domain events, allowing them to be enqueued and handled or raised as needed. This makes it trivial to implement features like early stopping (Just enqueue an exception and raise it when needed).
+- [**Domain Events**](https://eric-m-cardozo.github.io/TorchSystem/domain/): Aggregates can produce and consume domain events, which signal meaningful changes in the system or trigger actions elsewhere. Exceptions are supported to be treated as domain events, allowing them to be enqueued and handled or raised as needed. This makes it trivial to implement features like early stopping (Just enqueue an exception and raise it when needed).
 
-- [**Registry**](https://entropy-flux.github.io/TorchSystem/registry/): The registry module allows you to treat your models as entities by providing a way to calculate locally unique hashes for them that can act as their identifier. This module also provides several other utilities to help you handle the data from your domain.
+- [**Registry**](https://eric-m-cardozo.github.io/TorchSystem/registry/): The registry module allows you to treat your models as entities by providing a way to calculate locally unique hashes for them that can act as their identifier. This module also provides several other utilities to help you handle the data from your domain.
 
-- [**Dependency Injection**](https://entropy-flux.github.io/TorchSystem/depends/): The framework provides a robust dependency injection system that allows you to define and inject dependencies. This enables you to define your logic in terms of interfaces and inject implementations later. 
+- [**Dependency Injection**](https://eric-m-cardozo.github.io/TorchSystem/depends/): The framework provides a robust dependency injection system that allows you to define and inject dependencies. This enables you to define your logic in terms of interfaces and inject implementations later. 
 
-- [**Compilers**](https://entropy-flux.github.io/TorchSystem/compiler/): Building aggregates can be a complex process. In the context of deep learning, aggregates not only need to be built but also compiled, making compilation an integral part of the construction process. This framework provides a Compiler class to help define and manage the compilation process for your aggregates
+- [**Compilers**](https://eric-m-cardozo.github.io/TorchSystem/compiler/): Building aggregates can be a complex process. In the context of deep learning, aggregates not only need to be built but also compiled, making compilation an integral part of the construction process. This framework provides a Compiler class to help define and manage the compilation process for your aggregates
 
-- [**Services**](https://entropy-flux.github.io/TorchSystem/services/): Define stateless operations that fulfill domain-specific tasks using ubiquitous language. 
+- [**Services**](https://eric-m-cardozo.github.io/TorchSystem/services/): Define stateless operations that fulfill domain-specific tasks using ubiquitous language. 
 
-- [**Producers/Consumers**](https://entropy-flux.github.io/TorchSystem/prodcon/): Events produced by services can be delivered by producers to several consumers. This allows you to decouple services and define complex interactions between them. 
+- [**Producers/Consumers**](https://eric-m-cardozo.github.io/TorchSystem/prodcon/): Events produced by services can be delivered by producers to several consumers. This allows you to decouple services and define complex interactions between them. 
 
-- [**Publisher/Subscriber**](https://entropy-flux.github.io/TorchSystem/pubsub/): Data also can be delivered with the publisher/subscriber pattern. Publishers can send data to subscribers using a topic-based system.
+- [**Publisher/Subscriber**](https://eric-m-cardozo.github.io/TorchSystem/pubsub/): Data also can be delivered with the publisher/subscriber pattern. Publishers can send data to subscribers using a topic-based system.
 
 ## License
 
