@@ -230,7 +230,7 @@ class Producer:
 
 def event(cls: type):
     """ 
-    A decorator to define an Event message. An event will store weak references to objects
+    A decorator to define an Event message. An event will store references to objects
     and is meant to be consumed by consumers inside the scope where they are produced.
     
     Args:
@@ -249,4 +249,4 @@ def event(cls: type):
             metrics: Sequence
         ```
     """
-    return dataclass(slots=True, weakref_slot=True)(cls)
+    return dataclass(slots=True)(cls)
